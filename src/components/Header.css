@@ -1,0 +1,126 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header Styles */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #54548a;
+    /* Updated to a more neutral color */
+    padding: 20px;
+    color: white;
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    font-size: 16px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    padding: 8px 16px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-links a:hover {
+    background-color: #34495e;
+    /* Slightly darker shade for hover */
+    border-radius: 4px;
+}
+
+/* Search Bar Styles */
+.search-form {
+    display: flex;
+    align-items: center;
+    margin-right: 1rem;
+}
+
+.search-input {
+    padding: 8px 12px;
+    margin-left: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: none;
+    width: 800px;
+}
+
+.search-button {
+    padding: 8px 12px;
+    margin-left: 5px;
+    border: none;
+    background-color: #34495e;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.search-button i {
+    font-size: 18px;
+    /* Adjust size of the icon */
+}
+
+.search-button:hover {
+    background-color: #2c3e50;
+}
+
+
+/* Mobile Responsive Styles (Hamburger Menu) */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+}
+
+.navbar.open .nav-links {
+    display: block;
+}
+
+@media screen and (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .search-form {
+        margin-top: 10px;
+    }
+
+    .search-input {
+        width: 150px;
+        /* Adjust for smaller screens */
+    }
+}
