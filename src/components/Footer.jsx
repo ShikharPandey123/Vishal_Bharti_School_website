@@ -88,17 +88,17 @@ const Footer = () => {
                   target="_blank" // Opens the PDF in a new tab
                   rel="noopener noreferrer" // For security reasons when opening a new tab
                 >
-                  Admission P
+                  Registration Form
                 </a>
               </li>
               <li>
-              <a
-                  href="https://img1.wsimg.com/blobby/go/8bfc3ae8-6b51-422e-bd0c-84e4f6f53018/ADMISSION%20FORM_VBS.pdf"
+                <a
+                  href="//img1.wsimg.com/blobby/go/8bfc3ae8-6b51-422e-bd0c-84e4f6f53018/Monthly-planner(2023-24)%20(1).pdf"
                   className="quick-link"
                   target="_blank" // Opens the PDF in a new tab
                   rel="noopener noreferrer" // For security reasons when opening a new tab
                 >
-                  Registration Form
+                  Planner
                 </a>
               </li>
               <li>
@@ -113,4 +113,4 @@ const Footer = () => {
     </footer>
   );
 };
-export default Footer;
+export default Footer; 

@@ -1,4 +1,3 @@
-/* Modal Overlay */
 .modal-overlay {
     position: fixed;
     top: 0;
@@ -11,42 +10,31 @@
     align-items: center;
     z-index: 1000;
     padding: 10px;
-    /* Ensures proper spacing on smaller screens */
 }
 
-/* Modal Content */
 .modal-content {
     background: #fff;
     width: 90%;
-    /* Adjust for responsiveness */
     max-width: 600px;
-    /* Increased max-width for better dimensions */
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-    /* Slightly enhanced shadow */
     animation: fadeIn 0.3s ease-in-out;
     padding: 20px;
-    /* Added padding for internal spacing */
     box-sizing: border-box;
-    /* Ensures padding doesn't affect width */
 }
 
-/* Header Section */
 .modal-header {
     background: #54548a;
     color: #fff;
     padding: 15px 20px;
-    /* Added padding for consistent spacing */
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-size: 1.2rem;
-    /* Slightly larger font */
     font-weight: bold;
 }
 
-/* Close Button */
 .close-button {
     background: none;
     border: none;
@@ -54,10 +42,8 @@
     font-size: 1.5rem;
     cursor: pointer;
     padding: 0 10px;
-    /* Added spacing for better alignment */
 }
 
-/* Form Styling */
 .modal-form {
     padding: 20px;
     box-sizing: border-box;
@@ -65,40 +51,33 @@
 
 .form-group {
     margin-bottom: 20px;
-    /* Increased spacing between fields */
 }
 
 .form-group label {
     display: block;
     margin-bottom: 8px;
-    /* Adjusted spacing for better alignment */
     font-weight: bold;
     color: #333;
-    /* Consistent text color */
 }
 
 .form-group input,
 .form-group textarea {
     width: 100%;
     padding: 12px;
-    /* Slightly larger padding for better usability */
     border: 1px solid #ccc;
     border-radius: 6px;
     font-size: 1rem;
     box-sizing: border-box;
-    /* Ensures consistent width */
 }
 
 textarea {
     resize: none;
     height: 100px;
-    /* Slightly taller for better visibility */
 }
 
 .submit-button {
     width: 100%;
     padding: 12px;
-    /* Adjusted padding for a larger button */
     background: #54548a;
     color: #fff;
     border: none;
@@ -111,10 +90,8 @@ textarea {
 
 .submit-button:hover {
     background: #40407a;
-    /* Slightly darker hover effect */
 }
 
-/* Animation */
 @keyframes fadeIn {
     from {
         opacity: 0;

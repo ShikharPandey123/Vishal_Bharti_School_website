@@ -1,0 +1,89 @@
+.parallax-section {
+    position: relative;
+    height: 70vh;
+    width: 100%;
+    background: url("https://img1.wsimg.com/isteam/ip/8bfc3ae8-6b51-422e-bd0c-84e4f6f53018/vbs_bulidingpic.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25") center/cover no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.parallax-content {
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 12px;
+    max-width: 800px;
+    width: 90%;
+}
+
+.vision-title,
+.values-title,
+.motto-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.vision-description,
+.values-description,
+.motto-description {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .parallax-section {
+        height: 60vh;
+        /* Adjust height for tablets */
+    }
+
+    .parallax-content {
+        padding: 15px;
+        width: 85%;
+    }
+
+    .vision-title,
+    .values-title,
+    .motto-title {
+        font-size: 1.6rem;
+        /* Slightly smaller font size for mobile */
+    }
+
+    .vision-description,
+    .values-description,
+    .motto-description {
+        font-size: 1rem;
+        line-height: 1.6;
+        /* Adjusted line height for better readability */
+    }
+}
+
+@media (max-width: 480px) {
+    .parallax-section {
+        height: 50vh;
+        /* Adjust height for mobile */
+    }
+
+    .parallax-content {
+        padding: 10px;
+        width: 90%;
+    }
+
+    .vision-title,
+    .values-title,
+    .motto-title {
+        font-size: 1.4rem;
+        /* Further reduce font size for mobile */
+    }
+
+    .vision-description,
+    .values-description,
+    .motto-description {
+        font-size: 0.9rem;
+        line-height: 1.5;
+    }
+}

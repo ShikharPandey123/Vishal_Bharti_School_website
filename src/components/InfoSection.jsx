@@ -15,7 +15,7 @@ const InfoSection = () => {
         <h2 className="principal-quote-heading">Principal's Words</h2>
         <h1>
           “Education is our passport to the future, for tomorrow belongs to the
-          people who prepare for it today.” - Malcolm X
+          people who prepare for it today.”
         </h1>
         <p>
           The school, with an enthusiastic, experienced, and qualified teaching

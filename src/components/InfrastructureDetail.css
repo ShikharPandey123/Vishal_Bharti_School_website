@@ -1,0 +1,35 @@
+.infrastructure-detail {
+    text-align: center;
+    padding: 20px;
+}
+
+.detail-image {
+    max-width: 80%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .detail-image {
+        max-width: 100%;
+    }
+
+    p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .infrastructure-detail {
+        padding: 15px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+}

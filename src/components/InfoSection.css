@@ -4,9 +4,9 @@
     height: 50vh;
     /* Adjusted height to accommodate content */
     align-items: center;
-    gap: 30vw;
+    gap: 10vw;
     /* Increased gap to create more space between image and text */
-    padding: 20px;
+    padding: 10px;
     background-color: #f8f9fa;
     position: relative;
     border-radius: 10px;
@@ -17,26 +17,29 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    gap: 5px;
+        padding-top: 1rem;
     /* Gap between the image and the name */
 }
 
 .info-image img {
     width: 25rem;
     /* Image width */
-    height: 25rem;
+    height: 30rem;
     /* Image height */
-    border-radius: 50%;
+    /* border-radius: 50%; */
     /* Makes the image circular */
-    object-fit: contain;
+    object-fit: cover;
     /* Ensures the image fits within the circle */
-    border: 4px solid #54548a;
+    /* border: 4px solid #54548a; */
     /* Border for the image */
-    margin-left: 4rem;
+    margin-left: 6rem;
+        /* object-position: center; */
 }
 
 .info-name {
     font-size: 1.5rem;
+    margin-left: 5rem;
     /* Adjust font size for the name */
     color: #54548a;
     font-family: Arial, sans-serif;
@@ -44,8 +47,8 @@
 }
 
 .info-text {
-    width: 50vw;
-    line-height: 1.6;
+    width: 100vw;
+        line-height: 1.6;
     color: #333;
 }
 
@@ -62,13 +65,75 @@
 
 .principal-quote-heading {
     font-family: 'Brush Script MT', cursive;
-    /* Cursive font for the heading */
+    
     font-size: 5.5rem;
-    /* Adjust font size */
     color: #54548a;
-    /* Match text color */
     margin-bottom: 10px;
-    /* Space between heading and quote */
+    
     text-align: center;
-    /* Center align the heading */
+}
+
+@media(max-width: 768px) {
+    .info-section {
+        flex-direction: column;
+        height: auto;
+        padding: 15px;
+        gap: 5vw;
+    }
+
+    .info-image img {
+        width: 18rem;
+        height: 20rem;
+        margin-left: 0;
+    }
+
+    .info-name {
+        font-size: 1.2rem;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .info-text {
+        width: 100%;
+        padding: 0 1rem;
+    }
+
+    .info-text h1 {
+        font-size: 1.5rem;
+    }
+
+    .info-text p {
+        font-size: 1rem;
+    }
+
+    .principal-quote-heading {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .info-section {
+        padding: 10px;
+    }
+
+    .info-image img {
+        width: 15rem;
+        height: 18rem;
+    }
+
+    .info-name {
+        font-size: 1rem;
+    }
+
+    .info-text h1 {
+        font-size: 1.2rem;
+    }
+
+    .info-text p {
+        font-size: 0.9rem;
+    }
+
+    .principal-quote-heading {
+        font-size: 2.5rem;
+    }
 }

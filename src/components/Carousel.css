@@ -2,7 +2,6 @@
     overflow: hidden;
     width: 100%;
     height: 50vh;
-    /* Adjust based on your design */
 }
 
 .carousel-track {
@@ -15,15 +14,37 @@
     display: flex;
     justify-content: space-between;
     flex: 0 0 100%;
-    /* Each slide takes full width */
 }
 
 .carousel-image {
     flex: 1;
     margin: 0 5px;
-    /* Add spacing between images */
     max-width: 100%;
     height: 50vh;
     object-fit: cover;
-    /* Ensures no cropping of images */
+}
+
+@media (max-width: 768px) {
+    .carousel {
+        height: 40vh;
+    }
+
+    .carousel-image {
+        height: 40vh;
+    }
+}
+
+/* Mobile Devices */
+@media (max-width: 480px) {
+    .carousel {
+        height: 30vh;
+    }
+
+    .carousel-image {
+        height: 30vh;
+    }
+
+    .carousel-slide {
+        flex: 0 0 100%;
+    }
 }

@@ -1,0 +1,101 @@
+.rules-page {
+    height: auto;
+    background: url('https://img1.wsimg.com/isteam/ip/8bfc3ae8-6b51-422e-bd0c-84e4f6f53018/WhatsApp%20Image%202023-04-29%20at%2015.43.36.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    overflow: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rules-container {
+    position: relative;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    font-size: larger;
+    line-height: 3rem;
+    color: black;
+    width: 90%;
+    max-width: 800px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.rule-section {
+    margin-bottom: 20px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.rules-list {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.page-transition {
+    animation: fadeInPage 1s ease-in-out;
+}
+
+@keyframes fadeInPage {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 1024px) {
+    .rules-container {
+        padding: 15px;
+        font-size: 1.1rem;
+        line-height: 2.5rem;
+    }
+
+    .rules-list {
+        margin-left: 15px;
+    }
+
+    .rule-section {
+        margin-bottom: 15px;
+    }
+
+    .rules-page {
+        background-position: center;
+        background-size: cover;
+    }
+}
+
+@media (max-width: 480px) {
+    .rules-container {
+        padding: 10px;
+        font-size: 1rem;
+        line-height: 2rem;
+    }
+
+    .rules-list {
+        margin-left: 10px;
+    }
+
+    .rule-section {
+        margin-bottom: 10px;
+    }
+
+    .rules-page {
+        background-position: center;
+        background-size: cover;
+    }
+}

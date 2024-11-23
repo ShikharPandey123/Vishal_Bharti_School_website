@@ -3,9 +3,9 @@
     width: 100%;
     height: 500px;
     overflow: hidden;
+    z-index: 1;
 }
 
-/* Carousel Images */
 .image-container {
     width: 100%;
     height: 100%;
@@ -17,7 +17,6 @@
     object-fit: cover;
 }
 
-/* Overlay Styles */
 .text-overlay {
     position: absolute;
     top: 0;
@@ -33,12 +32,9 @@
 
 .blur-bg {
     background: rgba(0, 0, 0, 0.5);
-    /* Semi-transparent blur effect */
     backdrop-filter: blur(5px);
-    /* Blurs the background */
 }
 
-/* Fade-In Text Animation */
 .fade-text {
     color: white;
     font-size: 28px;
@@ -52,9 +48,29 @@
     opacity: 1;
 }
 
-/* Optional: Add responsiveness for small screens */
 @media (max-width: 768px) {
+    .school-info-container {
+            height: 400px;
+        }
+    
+        .text-overlay {
+            padding: 15px;
+        }
     .fade-text {
-        font-size: 20px;
+        font-size: 18px;
+            padding: 0 10px;
+    }
+}
+@media (max-width: 480px) {
+    .school-info-container {
+        height: 300px;
+    }
+
+    .fade-text {
+        font-size: 16px;
+    }
+
+    .text-overlay {
+        padding: 10px;
     }
 }
