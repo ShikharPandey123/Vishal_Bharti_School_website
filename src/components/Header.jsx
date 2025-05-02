@@ -26,7 +26,6 @@ const Header = () => {
 
   return (
     <header className="header">
-      {/* Navbar */}
       <nav className={`navbar ${isMenuOpen ? "open" : ""}`}>
         <ul className="nav-links">
           <li>
@@ -102,7 +101,6 @@ const Header = () => {
               </ul>
             )}
           </li>
-          {/* Infrastructure as a separate link */}
           <li>
             <NavLink to="/infrastructure" activeClassName="active">
               Infrastructure
@@ -111,7 +109,6 @@ const Header = () => {
         </ul>
       </nav>
 
-      {/* Search Bar */}
       <form className="search-form" onSubmit={handleSearchSubmit}>
         <input
           type="text"
@@ -121,11 +118,10 @@ const Header = () => {
           className="search-input"
         />
         <button type="submit" className="search-button">
-          <i className="fas fa-search"></i> {/* Font Awesome Search Icon */}
+          <i className="fas fa-search"></i>
         </button>
       </form>
 
-      {/* Hamburger Menu */}
       <div className="hamburger" onClick={toggleMenu}>
         <span></span>
         <span></span>

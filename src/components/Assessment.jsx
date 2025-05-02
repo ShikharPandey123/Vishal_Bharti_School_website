@@ -1,5 +1,5 @@
 import React from "react";
-import "./Assessment.css"; // Updated styles similar to Rules.css
+import "./Assessment.css";
 
 const Assessment = () => {
   const assessmentData = [

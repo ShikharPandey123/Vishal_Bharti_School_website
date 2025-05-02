@@ -1,19 +1,16 @@
 import React from "react";
-import "./ContactFormModal.css"; // Import CSS for the modal styling
+import "./ContactFormModal.css";
 
 const ContactFormModal = ({ onClose }) => {
   return (
     <div className="modal-overlay">
       <div className="modal-content">
-        {/* Modal Header */}
         <div className="modal-header">
           <h2>Vishal Bharti Senior Secondary School</h2>
           <button className="close-button" onClick={onClose}>
             &times;
           </button>
         </div>
-
-        {/* Modal Body with Form */}
         <form className="modal-form">
           <p>Hi! Let us know how we can help, and we'll respond shortly.</p>
 

@@ -1,8 +1,7 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import "./InfrastructureDetail.css"; // For styling
+import "./InfrastructureDetail.css";
 
-// Data for each detail page
 export const details = {
   Reception: {
     title: "Reception",

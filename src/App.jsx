@@ -8,7 +8,7 @@ import SchoolInfo from "./components/SchoolInfo";
 import Rules from "./components/Rules";
 import Assessment from "./components/Assessment";
 import Infrastructure from "./components/Infrastructure";
-import ParallaxSection from "./components/ParallaxSection"; // Import the Parallax Component
+import ParallaxSection from "./components/ParallaxSection";
 import "./App.css";
 
 const App = () => {

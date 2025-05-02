@@ -1,12 +1,11 @@
 import React from "react";
-import { Link } from "react-router-dom"; // Import Link from react-router-dom
+import { Link } from "react-router-dom";
 import "./Footer.css";
 
 const Footer = () => {
   return (
     <footer className="footer-container">
       <div className="footer-content">
-        {/* Left Section: Contact Details + Map */}
         <div className="footer-left">
           <div className="contact-section">
             <h2>Contact Details</h2>
@@ -45,8 +44,6 @@ const Footer = () => {
               </Link>
               <span>vbs.ideas@gmail.com</span>
             </p>
-
-            {/* LinkedIn Link with Icon */}
             <p className="contact-item">
               <Link
                 to="https://www.linkedin.com/school/vishal-bharti-school/about/"
@@ -75,8 +72,6 @@ const Footer = () => {
             ></iframe>
           </div>
         </div>
-
-        {/* Right Section: Quick Links */}
         <div className="footer-right">
           <div className="quick-links-section">
             <h3>Quick Links</h3>
@@ -95,8 +90,8 @@ const Footer = () => {
                 <a
                   href="//img1.wsimg.com/blobby/go/8bfc3ae8-6b51-422e-bd0c-84e4f6f53018/Monthly-planner(2023-24)%20(1).pdf"
                   className="quick-link"
-                  target="_blank" // Opens the PDF in a new tab
-                  rel="noopener noreferrer" // For security reasons when opening a new tab
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   Planner
                 </a>

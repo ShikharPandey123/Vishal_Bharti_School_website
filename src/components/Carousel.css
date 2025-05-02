@@ -34,7 +34,6 @@
     }
 }
 
-/* Mobile Devices */
 @media (max-width: 480px) {
     .carousel {
         height: 30vh;

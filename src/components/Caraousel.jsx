@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./Carousel.css"; // Add your CSS styles here
+import "./Carousel.css";
 
 const Carousel = () => {
   const images = [
@@ -22,13 +22,13 @@ const Carousel = () => {
 
   const [currentSlide, setCurrentSlide] = useState(0);
 
-  const imagesPerSlide = 3; // Number of images per slide
+  const imagesPerSlide = 3;
   const totalSlides = Math.ceil(images.length / imagesPerSlide);
 
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % totalSlides);
-    }, 8000); // Slide duration (3 seconds)
+    }, 8000);
     return () => clearInterval(interval);
   }, [totalSlides]);
 

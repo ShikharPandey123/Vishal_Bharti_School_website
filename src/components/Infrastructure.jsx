@@ -1,14 +1,13 @@
 import React from "react";
-import "./Infrastructure.css"; // For styling
-import { details } from "./InfrastructureDetail"; // Import details object
+import "./Infrastructure.css";
+import { details } from "./InfrastructureDetail";
 
 const Infrastructure = () => {
-  // Convert the details object into an array of cards
   const cards = Object.entries(details).map(([key, value], index) => ({
     id: index + 1,
     title: value.title,
     image: value.image,
-    link: `/infrastructure/${key}`, // Use the key as the link
+    link: `/infrastructure/${key}`,
   }));
 
   return (

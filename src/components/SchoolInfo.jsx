@@ -1,21 +1,20 @@
 import React, { useEffect, useState } from "react";
-import "./SchoolInfo.css"; // Import the CSS file
-import Carousel from "./Caraousel.jsx"; // Import the carousel component
+import "./SchoolInfo.css";
+import Carousel from "./Caraousel.jsx";
 
 const SchoolInfo = () => {
   const [isVisible, setIsVisible] = useState(false);
   const [textStep, setTextStep] = useState(0);
 
   useEffect(() => {
-    // Start the animation sequence
     const timer = setTimeout(() => {
-      setTextStep(1); // Show title text
+      setTextStep(1);
     }, 500);
 
     const nextTimer = setTimeout(() => {
-      setTextStep(2); // Fade out the text
-      setIsVisible(false); // Remove blur after text fades
-    }, 4000); // Text stays for 3.5 seconds
+      setTextStep(2);
+      setIsVisible(false);
+    }, 4000);
 
     return () => {
       clearTimeout(timer);
@@ -25,10 +24,7 @@ const SchoolInfo = () => {
 
   return (
     <div className="school-info-container">
-      {/* Carousel Section */}
       <Carousel />
-
-      {/* Text Overlay Section */}
       <div
         className={`text-overlay ${
           isVisible || textStep === 1 ? "blur-bg" : ""
